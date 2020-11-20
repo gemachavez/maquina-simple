@@ -23,13 +23,13 @@ public class MaquinaExpendedoraSimple {
         estacionOrigen = "león";
         estacionDestino = "madrid";
     }
-    
-    public MaquinaExpendedoraSimple(int preciobillete,String estacionDestino){
-        precioBillete = precioBillete;
+   
+    public MaquinaExpendedoraSimple(int precioDelBillete, String destino) {
+        precioBillete = precioDelBillete;
         balanceClienteActual = 0;
         totalDineroAcumulado = 0;
         estacionOrigen = "león";
-        estacionDestino = estacionDestino;
+        estacionDestino = destino;
     }
 
     /**
