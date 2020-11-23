@@ -6,10 +6,13 @@ public class MaquinaExpendedoraSimple {
     private int balanceClienteActual;
     // El total de dinero almacenado en la maquina desde su ultimo vaciado
     private int totalDineroAcumulado;
+    // La cantidad de dinero que lleva metida la maquina desde que se creo
+    private int balanceTotal;
     // El origen del billete
     private String estacionOrigen;
     // El destino del billete
     private String estacionDestino;
+    // El total del dinero acumulado de la maquina desde su puesta en marcha
 
     /**
      * Crea una maquina expendedora de billetes de tren con el 
@@ -38,21 +41,22 @@ public class MaquinaExpendedoraSimple {
     public int getPrecioBillete() {
         return precioBillete;
     }
-
-    /**
-     * Devuelve la cantidad de dinero que el cliente actual lleva introducida
-     */
-    public int getBalanceClienteActual() {
-        return balanceClienteActual;
-    }
-
+    
     /**
      * Simula la introduccion de dinero por parte del cliente actual
      */
     public void introducirDinero(int cantidadIntroducida) {
         balanceClienteActual = balanceClienteActual + cantidadIntroducida;
     }
-
+    
+    /**
+     * Simula la introduccion de dinero
+     */
+    public int getBalanceTotal() {
+        balanceTotal = balanceTotal + balanceClienteActual;
+        return balanceTotal;
+    }
+   
     /**
      * Imprime un billete para el cliente actual
      */
