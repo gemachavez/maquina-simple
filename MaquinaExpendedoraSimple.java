@@ -32,7 +32,14 @@ public class MaquinaExpendedoraSimple {
         estacionOrigen = "león";
         estacionDestino = destino;
     }
-
+    
+    /**
+     * Cambiar el precio del billete
+     */
+    public void cambiarPrecioBillete (int introducirNuevoPrecioBillete) {
+        precioBillete = introducirNuevoPrecioBillete;
+    }
+    
     /**
      * Devuelve el precio del billete
      */
